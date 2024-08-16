@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+                
+body {
+    width: 80%;
+    margin-inline: auto;
+    font-family: "Fasthand", cursive;
+}
