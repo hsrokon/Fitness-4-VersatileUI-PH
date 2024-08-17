@@ -10,16 +10,7 @@
     line-height: 1.5;
     text-decoration: none;
     color: inherit;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-.freehand-regular {
-    font-family: "Freehand", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+} 
                 
 body {
     
@@ -32,7 +23,12 @@ body {
 :root {
     --clr-border-light: rgb(95, 94, 94);
     --clr-tomato : tomato;
+    --clr-txt-light : rgb(187, 187, 187);
+    --clr-txt: white;
+    --clr-black : black;
+    --clr-button : rgb(190, 241, 159);
 }
+
 
 
 
@@ -53,6 +49,7 @@ header {
 .web-name {
     font-style: italic;
     font-size: 2.1rem;
+    color: var(--clr-tomato)
 }
 
 .nav-items {
@@ -74,3 +71,106 @@ header {
 }
 
 
+/* ------banner----- */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.banner-left {
+    max-width: 35em;
+}
+
+.banner-heading {
+    font-size: 4.5rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.shape {
+    font-family: "Freehand", cursive;
+    font-size: 8rem;
+    font-weight: 300;
+    line-height: 0.5;
+    color: wheat;
+}
+
+.banner-des {
+    color: var(--clr-txt-light);
+    font-weight: 500;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 3em;
+    margin-top: 1.5em;
+}
+
+.banner-button {
+    color: var(--clr-txt);
+    padding: 1em 3em;
+    border-radius: 2em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.ban1 {
+    background-color: var(--clr-tomato);
+    border: none;
+}
+.ban1:hover {
+    background-color: var(--clr-button);
+    color: var(--clr-black);
+}
+
+.ban2 {
+    background: transparent;
+    border: none;
+    border: 1px solid var(--clr-tomato);
+}
+.ban2:hover {
+    background-color: var(--clr-button);
+    color: var(--clr-black);
+    border: none;
+}
+
+.banner-right {
+    position: relative;
+}
+
+.position1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 16%;
+    left: -20%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.7em 1em;
+    gap: 0.7em;
+    border-radius: 0.5em;
+    border: 1px solid var(--clr-border-light);
+}
+
+.pleft {
+    background-color: var(--clr-tomato);
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+}
+
+.position2 {
+    position: absolute;
+    bottom: 60%;
+    right: -15%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5em 1em;
+    border: 1px solid var(--clr-border-light);
+    border-radius: 0.5em;
+}
+
+.ban-h2 {
+    font-size: 1.6rem;
+}
