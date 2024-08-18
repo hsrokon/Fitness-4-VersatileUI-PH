@@ -429,3 +429,74 @@ option {
 .calculate {
     background-color: rgb(105, 173, 147);
 }
+
+
+/* fifth-section */
+.fifth-section {
+    text-align: center;
+    /* margin-top: 1em; */
+}
+
+.team-des {
+        text-align: center;
+        max-width: 60%;
+        margin-inline: auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px); /* Adjusted row height */
+    gap: 1em;
+    margin-top: 2em;
+    background-color: var(--clr-blur);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.trainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+    color: white;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-headings2 {
+    color: rgb(249, 249, 156);
+    font-weight: 800;
+}
+
+.sec-des2 {
+    color: black;
+}
+
+
+.trainer1 {
+    background-image: url(../images/trainer1.png);
+}
+
+.trainer2 {
+    background-image: url(../images/trainer2.png);
+}
+
+.trainer3 {
+    background-image: url(../images/trainer3.png);
+}
+
+.trainer4 {
+    background-image: url(../images/trainer4.png);
+}
+
+.trainer5 {
+    background-image: url(../images/trainer5.png);
+}
+
+.trainer6 {
+    background-image: url(../images/trainer6.png);
+}
