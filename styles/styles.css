@@ -468,7 +468,8 @@ option {
 }
 
 .sub-headings2 {
-    color: rgb(249, 249, 156);
+    color: rgb(254, 254, 186);
+    background-color: rgba(33, 33, 33, 0.3);
     font-weight: 800;
 }
 
