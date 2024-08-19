@@ -855,3 +855,107 @@ footer {
         max-width: 50%;
     }
 }
+
+/* small device */
+@media (max-width:768px) { 
+    .banner .position1 {
+        /* bottom: 16%; */
+        left: 0%;
+    }
+
+    .position2 {
+        bottom: 53%;
+        right: -5%;
+        padding: 0.5em 1em;
+    }
+    
+
+    footer .hr1 {
+        width: 5em;
+      }
+
+    .banner-left .banner-heading {
+        font-size: 3.8rem;
+    }
+
+    .second-section {
+        max-width: 60%;
+    }
+
+    .first-sec-top {
+        max-width: 100%;
+    }
+
+    .first-section .first-sec-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .second-section {
+        width: 100%;
+    }
+    .s-s-h {
+        font-size: 2em;
+    }
+
+    .grid-img {
+        font-size: 0.8em;
+        padding: 0;
+    }
+
+    .sec-outside-right {
+        max-width: 90%;
+    }
+
+    .fourth-sec-top {
+        padding: 0;
+    }
+
+    .f-s-h {
+        font-size: 2.8em;
+    }
+    
+
+    .fifth-section {
+        width: 100%;
+    }
+
+    .team-des {
+        font-size: 0.8em;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 300px);
+        gap: 0.5em;
+        padding: 0.4em;
+        border-radius: 1em;
+
+        width: 90%;
+        margin-inline: auto;
+        /* object-fit: cover; */
+    }
+
+    .trainer1 {
+        height: 10.5em;
+        background-position: center top;
+    }
+
+    .trainer2 {
+        height: 10.5em;
+    }
+
+    .trainer3 {
+        height: 10.5em;
+        background-position: center top;
+    }
+
+
+    footer {
+        padding: 0;
+        padding-bottom: 1em;
+    }
+
+    .footer-heading {
+        font-size: 3.5em;
+    }
+}
