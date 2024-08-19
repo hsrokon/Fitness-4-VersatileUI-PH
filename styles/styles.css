@@ -107,7 +107,6 @@ header {
 .banner-buttons {
     display: flex;
     gap: 3em;
-
 }
 
 .banner-button {
@@ -137,6 +136,110 @@ header {
     background-color: var(--clr-button);
     color: var(--clr-black);
     border: none;
+}
+
+@media (max-width:1160px) {
+    .banner-button {
+        padding: 1em 2em;
+        border-radius: 2em;
+        font-size: 1rem;
+    }
+
+    .team-grid {
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .second-section .second-sec-right img {
+        width: 25em;
+        height: 22em;
+    }
+}
+
+@media (max-width:1100px) {
+    .banner-buttons {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .banner-button {
+        padding: 1em 2em;
+        border-radius: 2em;
+        font-size: 0.9rem;
+    }
+
+    .team-grid {
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .second-section .second-sec-right img {
+        width: 25em;
+        height: 22em;
+    }
+}
+
+@media (max-width:1000px) {
+    
+    .banner-buttons {
+        gap: 1em;
+    }
+
+    .banner-button {
+        padding: 1em 1em;
+        border-radius: 2em;
+        font-size: 0.9rem;
+    }
+
+    .fifth-section .team-grid {
+        grid-template-rows: repeat(2, 170px);
+    }
+}
+
+@media (max-width:975px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-buttons {
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    .banner .position1 {
+        bottom: 16%;
+        left: -30%;
+    }
+
+    .first-section .first-sec-bottom {
+        gap: 1em;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3em;
+    }
+
+
+    
+    .web-name {
+        font-style: italic;
+        font-size: 3.2rem;
+        color: var(--clr-tomato)
+    }
+    
+    .nav-items {
+        gap: 2em;
+        padding: 0.1em 1em 0.1em 0.2em;
+        border-radius: 1.5em;
+        font-size: 0.8em;
+    }
+    
+    .home {
+        padding: 0.1em 0.9em;
+        border-radius: 1em;
+    }
 }
 
 .banner-right {
@@ -179,6 +282,14 @@ header {
     font-size: 1.6rem;
 }
 
+/* Responsiveness */
+@media (max-width:1420px) {
+    .position1 {
+        bottom: 16%;
+        left: 5%;
+    }
+}
+
 
 /* first-section */
 .section {
@@ -209,8 +320,10 @@ header {
 }
 
 .first-sec-bottom {
-    display: flex;
+    display: grid;
     gap: 1em;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 3em;
     text-align: center;
 }
@@ -231,13 +344,53 @@ header {
     border-radius: 1em;
 }
 
-.scond-sec-right img {
+.second-sec-right img {
     width: 100%;
     height: 30em;
     width: 40em;
     object-fit: cover;
     border-radius: 1em;
     /* object-position: 80% center; */
+}
+
+@media (max-width:1395px) {
+    .second-section {
+        gap: 2em;
+        padding: 1em;
+        border-radius: 1em;
+    }
+    
+    .second-sec-right img {
+        width: 31em;
+        height: 25em;
+    }
+
+    .media-btn-1 {
+        padding: 1em 1em;
+        border-radius: 1em;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:930px) {
+    .second-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second-sec-left {
+      max-width: 90%;  
+    }
+
+    .second-sec-right img {
+        width: 10em;
+        height: 10em;
+    }
+
+    footer .footer-flex {
+        margin-left: 2em;
+    }
 }
 
 
@@ -249,6 +402,7 @@ header {
     grid-template-columns: repeat(4, 1fr); 
     margin-top: 1.7em;
 }
+
 
 .grid-img {
     position: relative; /* Make the container relative for the overlay effect */
@@ -347,7 +501,10 @@ header {
 
 /* fourth-section */
 .fourth-sec-top {
-    margin-left: 10em;
+    /* margin-left: 10em; */
+    text-align: center;
+    max-width: 70%;
+    margin-inline: auto;
 }
 
 .fourth-sec-outside {
@@ -429,6 +586,33 @@ option {
     background-color: rgb(105, 173, 147);
 }
 
+@media (max-width:1080px) {
+    .fourth-sec-top {
+        text-align: center;
+    }
+
+    .fourth-sec-outside {
+        flex-direction: column;
+        align-items: center;
+        gap: 4em;
+        text-align: center;
+    }
+
+    .left-grid {
+        font-size: 1.25em;
+    }
+
+    .grid-border {
+        padding: 1em;
+    }
+}
+
+/* @media (max-width:800px) {
+    footer .hr1 {
+        width: 5em;
+      }
+} */
+
 
 /* fifth-section */
 .fifth-section {
@@ -503,6 +687,36 @@ option {
     background-image: url(../images/trainer6.png);
 }
 
+@media (max-width:1520px) {
+    .team-grid {
+        grid-template-rows: repeat(2, 270px);
+        gap: 0.5em;
+        margin-top: 1.7em;
+        padding: 0.5em;
+        border-radius: 1em;
+    }
+
+    footer .hr1 {
+        width: 40em;
+      }
+}
+
+@media (max-width:1380px) {
+    .team-grid {
+        grid-template-rows: repeat(2, 260px);
+        gap: 0.5em;
+        margin-top: 1.7em;
+        padding: 0.5em;
+        border-radius: 1em;
+    }
+}
+
+@media (max-width:1250px) {
+    .team-grid {
+        grid-template-rows: repeat(2, 245px);
+    }
+}
+
 
 /* footer */
 footer {
@@ -514,7 +728,12 @@ footer {
 .footer-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+/* .item {
+    flex: 1;
+} */
 
 .footer-left {
     max-width: 23em;
@@ -548,4 +767,91 @@ footer {
 .footer-bottom {
     text-align: center;
     color: var(--clr-txt-light);
+}
+
+@media (max-width:1100px) {
+    .second-section .second-sec-right img {
+        width: 20em;
+        height: 22em;
+    }
+
+    .footer-flex {
+        margin-left: 7em;
+    }
+
+    .item:first-child {
+        flex-basis: 100%; /* Make the first item take the full width */
+        margin-bottom: 1.5em;
+      }
+      .item:nth-child(2),
+      .item:nth-child(3) {
+        flex-basis: 50%; /* Adjust width of the 2nd and 3rd items */
+      }
+
+      footer .hr1 {
+        width: 20em;
+      }
+}
+
+@media (max-width:768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        gap: 0.5em;
+        padding: 0.4em;
+        border-radius: 1em;
+
+        width: 90%;
+        margin-inline: auto;
+        /* object-fit: cover; */
+    } 
+
+    .trainer1 {
+        height: 12em;
+    }
+
+    .trainer2 {
+        height: 12em;
+    }
+
+    .trainer3 {
+        height: 12em;
+    }
+
+    .trainer4 {
+        height: 12em;
+    }
+
+    .trainer5 {
+        height: 12em;
+    }
+
+    .trainer6 {
+        height: 12em;
+    }
+
+    .banner .position1 {
+        /* bottom: 16%; */
+        left: -10%;
+    }
+
+    footer .hr1 {
+        width: 5em;
+      }
+
+    .banner-left {
+        font-size: 0.7em;
+    }
+
+    .second-section {
+        max-width: 60%;
+    }
+
+    .media-btn-1 {
+        padding: 0.5em;
+    }
+
+    .sec-outside-right {
+        max-width: 50%;
+    }
 }
